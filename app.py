@@ -1,4 +1,8 @@
 import streamlit as st
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')  # If using NLTK version 3.6 or higher
+
 import pandas as pd
 from text_analysis.text_analysis_module import text_analysis_function
 from image_analysis.image_analysis_module import image_analysis_function
